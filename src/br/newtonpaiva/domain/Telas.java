@@ -188,7 +188,7 @@ public class Telas {
             }
         });
 
-        JLabel lblQuantidade = new JLabel("Quantidade:");
+        JLabel lblQuantidade = new JLabel("Quantidade: 0");
         lblQuantidade.setBounds(50, 140, 100, 20);
 
         JButton btnMais = new JButton("Adicionar");
