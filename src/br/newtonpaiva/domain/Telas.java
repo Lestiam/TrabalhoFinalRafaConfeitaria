@@ -16,7 +16,7 @@ public class Telas {
     private String produtoSelecionado;
     private String massaSelecionada;
     private String recheioSelecionado;
-    private int quantidade;
+    private int quantidade = 0;
 
 
     public void tela1() {
@@ -178,7 +178,7 @@ public class Telas {
         comboBox.setBounds(50, 80, 140, 20);
 
         JButton btnProximo = new JButton("Próximo");
-        btnProximo.setBounds(50, 110, 100, 30);
+        btnProximo.setBounds(50, 180, 100, 30);
         btnProximo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -191,8 +191,8 @@ public class Telas {
         JLabel lblQuantidade = new JLabel("Quantidade:");
         lblQuantidade.setBounds(50, 140, 100, 20);
 
-        JButton btnMais = new JButton("↑");
-        btnMais.setBounds(160, 140, 40, 20);
+        JButton btnMais = new JButton("Adicionar");
+        btnMais.setBounds(160, 140, 100, 20);
         btnMais.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -201,8 +201,8 @@ public class Telas {
             }
         });
 
-        JButton btnMenos = new JButton("↓");
-        btnMenos.setBounds(210, 140, 40, 20);
+        JButton btnMenos = new JButton("Remover");
+        btnMenos.setBounds(280, 140, 100, 20);
         btnMenos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -255,8 +255,10 @@ public class Telas {
         JLabel lblValorFinal = new JLabel("Valor Final: R$ " + valorFinal);
         lblValorFinal.setBounds(50, 260, 200, 20);
 
+
         // mude o path para onde voce criou o arquivo txt que deve obter as informações:
-        String path = "C:\\Estudo\\faculdade\\Teste3\\Pedido.txt";
+        String path = "C:\\Faculdade\\TrabalhoFinalRafaConfeitaria\\Pedido.txt";
+        JOptionPane.showMessageDialog(null, "Seu pedido foi salvo em: " + path , "Pedido", JOptionPane.PLAIN_MESSAGE);
         try {
             FileWriter writer = new FileWriter(path);
             writer.write("Nome: " + nome + "\n");
