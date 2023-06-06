@@ -1,8 +1,8 @@
-Nome: Shauh
-Sobrenome: Ashushau
-Telefone: (12)12313-2132
-Produto: Bolo
-Massa: Chocolate
+Nome: Maicooooooooooonnnnnn        
+Sobrenome: Douuuuuuuuuuglaaaasssss      
+Telefone: (31)99296-2037
+Produto: Dunet
+Massa: Baunilha
 Recheio: Coco
-Quantidade: 12
-Valor Final: R$ 120.0
+Quantidade: 47
+Valor Final: R$ 470.0

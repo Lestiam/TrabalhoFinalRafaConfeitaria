@@ -68,7 +68,7 @@ public class Telas {
     private MaskFormatter getNomeMaskFormatter() {
         MaskFormatter mascaraNome = null;
         try {
-            mascaraNome = new MaskFormatter("U****");
+            mascaraNome = new MaskFormatter("U****************************");
             mascaraNome.setPlaceholderCharacter(' ');
         } catch (ParseException e) {
             System.err.println("Erro na formatação: " + e.getMessage());
@@ -80,7 +80,7 @@ public class Telas {
     private MaskFormatter getSobrenomeMaskFormatter() {
         MaskFormatter mascaraSobrenome = null;
         try {
-            mascaraSobrenome = new MaskFormatter("U*******");
+            mascaraSobrenome = new MaskFormatter("U****************************");
             mascaraSobrenome.setPlaceholderCharacter(' ');
         } catch (ParseException e) {
             System.err.println("Erro na formatação: " + e.getMessage());
